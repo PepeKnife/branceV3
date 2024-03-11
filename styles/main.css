@@ -359,56 +359,8 @@ li i{
     width: 45%;
 }
 
-@media(min-width: 820px) {
-    .Hright {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;           
-    }
 
-    .Hleft {   
-        width: 50%;
-    }
-    #hero {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #filosofy {
-        gap: 6em;
-    }
-
-    #filosofy .text {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10em;
-    }
-
-    #filosofy .text p {
-        text-align: start;
-    }
-
-    #agend {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 2em;
-    }
-
-    #agend .info, #agend .calendly {
-        width: 50%;
-    }
-
-    #agend .info p {
-        text-align: justify     ;
-    }
-}
-
-@media (min-width: 1025px) {
+@media (min-width: 1000px) {
 
     h1 {
         font-size: 3.6em;
