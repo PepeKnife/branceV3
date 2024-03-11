@@ -23,6 +23,15 @@ i {
     font-size: 2.4em;
 }
 
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+}
+
 h1 {
     color: #fff;
     font-family: "Poppins";
@@ -70,6 +79,12 @@ h5 {
     font-weight: 400;
 }
 
+h6 {
+    font-size: 1em;
+    color: #142F52;
+    font-family: 'Poppins';
+}
+
 p {
     font-family: "Quicksand";
     color: #fff;
@@ -92,7 +107,6 @@ p {
 }
 
 .cta-big {
-    width: 60%;
     padding: 0 5%;
     background-color: #142F52;
     color: #fff;
@@ -113,11 +127,34 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 5% 0 5%;
 }
 
 nav img {
     height: 3em;
     cursor: pointer;
+}
+
+.Hright {
+    display: none;
+}
+
+.Hright img {
+    height: 70vh;
+    width: 70vh;
+    border-radius: 20em;
+}
+
+.Hleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.Hleft p {
+    text-align: center;
 }
 
 #hero {
@@ -140,6 +177,10 @@ nav img {
     justify-content: center;
     align-items: center;
     gap: 2em;
+}
+
+#motivation h3 {
+    color: #1F4374;
 }
 
 #motivation img {
@@ -186,7 +227,7 @@ nav img {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 4em;
+    gap: 7em;
 }
 
 #trust {
@@ -208,7 +249,7 @@ nav img {
     align-items: center;
 }
 
-#trust .imgs div {
+#trust .imgs div{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -221,7 +262,6 @@ nav img {
     justify-content: center;
     align-items: center;
     gap: 2.4em;
-    margin-bottom: 10em;
 }
 
 #filosofy p {
@@ -239,6 +279,61 @@ nav img {
     align-items: center;
     gap: 7em;
 }
+
+#agend {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    gap:1em;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4em;
+}
+
+.info .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#agend h3 {
+    font-size: 1.7em;
+    text-align: center;
+    color: #1F4374;
+}
+
+#agend p {
+    font-family: "Quicksand";
+    color: #000;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+#agend p strong {
+    font-weight: 700;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    gap: 10px;
+}
+
+li i{
+    font-size: 1.7em;
+    color: #3F8EFC;
+}
+
+
 
 #footer {
     background-color: #1D406E;
@@ -262,4 +357,194 @@ nav img {
 
 #footer img {
     width: 45%;
+}
+
+@media(min-width: 820px) {
+    .Hright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;           
+    }
+
+    .Hleft {   
+        width: 50%;
+    }
+    #hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #filosofy {
+        gap: 6em;
+    }
+
+    #filosofy .text {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10em;
+    }
+
+    #filosofy .text p {
+        text-align: start;
+    }
+
+    #agend {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2em;
+    }
+
+    #agend .info, #agend .calendly {
+        width: 50%;
+    }
+
+    #agend .info p {
+        text-align: justify     ;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    h1 {
+        font-size: 3.6em;
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 3.2em;
+    }
+    
+    h3 {
+        font-size: 2.8em;
+        width: 80%;
+    }
+
+    h4 {
+        font-size: 2em;
+    }
+
+    i {
+        font-size: 4em;
+    }
+
+    p{
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 2% 8% 2% 8%;
+    }
+
+    a {
+        font-size: 1.4em;
+    }
+
+    .cta-blue {
+        color: #fff;
+        background-color: #142F52;
+        padding: 1% 2% 1% 2%;
+        border-radius: 10px;
+    }
+    
+    .cta-white {
+        color: #142F52;
+        background-color: #fff;
+        padding: 1% 2% 1% 2%;
+        border-radius: 10px;
+    }
+    
+    .cta-big {
+        background-color: #142F52;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        text-align: center;
+        border-radius: 15px;
+        font-weight: 300;
+    }
+
+    nav {
+        padding: 0 8% 0 8%;
+    }
+
+    nav img {
+        height: 8em;
+    }
+
+    .Hright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;           
+    }
+
+    .Hleft {   
+        width: 50%;
+    }
+    #hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #motivation img {
+        width: 35%;
+    }
+    
+
+    .wrap {
+        gap: 7em;
+    }
+
+
+    #trust .imgs {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    #trust .imgs div {
+        justify-content: center;
+        gap: 1.5em;
+    }
+
+    #filosofy {
+        gap: 6em;
+    }
+
+    #filosofy .text {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10em;
+    }
+
+    #filosofy .text p {
+        text-align: start;
+    }
+
+    #agend {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2em;
+    }
+
+    #agend .info, #agend .calendly {
+        width: 50%;
+    }
+
+    #agend .info p {
+        text-align: justify     ;
+    }
+
 }
